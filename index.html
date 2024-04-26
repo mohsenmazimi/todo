@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css3?family=Noto+Sans:wght@300;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Space+Mono:wght@400;700&family=Titillium+Web:wght@300;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Titillium Web", sans-serif;
+        color: white;
+        text-transform: capitalize;
+      }
+      main {
+        background-image: linear-gradient(
+          to right top,
+          #bb6bd1,
+          #c370d3,
+          #cc75d6,
+          #d47ad8,
+          #dc7fdb,
+          #ef7cc6,
+          #fa7db1,
+          #ff839e,
+          #ff9571,
+          #fab749,
+          #c5dc4a,
+          #5ffb87
+        );
+        background-image: linear-gradient(
+          45deg,
+          hsl(340deg 100% 30%) 0%,
+          hsl(373deg 100% 31%) 6%,
+          hsl(389deg 100% 31%) 11%,
+          hsl(304deg 100% 33%) 17%,
+          hsl(315deg 100% 37%) 33%,
+          hsl(333deg 100% 33%) 38%,
+          hsl(339deg 100% 36%) 33%,
+          hsl(334deg 100% 40%) 39%,
+          hsl(337deg 100% 43%) 44%,
+          hsl(346deg 83% 51%) 50%,
+          hsl(357deg 91% 59%) 56%,
+          hsl(8deg 100% 61%) 61%,
+          hsl(17deg 100% 59%) 67%,
+          hsl(36deg 100% 56%) 73%,
+          hsl(34deg 100% 53%) 78%,
+          hsl(40deg 100% 50%) 83%,
+          hsl(45deg 100% 50%) 89%,
+          hsl(50deg 100% 50%) 94%,
+          hsl(55deg 100% 50%) 100%
+        );
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        padding: 100px 0;
+      }
+      main > div:nth-of-type(1) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      }
+      main > div:nth-of-type(1) > input {
+        width: 500px;
+        display: block;
+        border: none;
+        padding: 10px 0px;
+        border-radius: 5px;
+        font-size: 30px;
+        color: black;
+      }
+      main > div:nth-of-type(1) > button {
+        display: block;
+        border: none;
+        background-color: #131833;
+        padding: 20px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      main > div:nth-of-type(3) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 30px auto;
+        transition: all 0.5s;
+      }
+      main > div:nth-of-type(3) > * {
+        width: 100%;
+      }
+      main > div:nth-of-type(3) > div {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+        align-items: center;
+        width: 630px;
+        background-color: #131833;
+        padding: 30px 30px;
+        border-radius: 10px;
+      }
+      main > div:nth-of-type(3) > div > div > button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 5px;
+      }
+      main > div:nth-of-type(3) > div > div > button:nth-of-type(1) {
+        background-image: linear-gradient(
+          to right top,
+          #051937,
+          #004d7a,
+          #008793,
+          #00bf73,
+          #a8eb13
+        );
+      }
+      main > div:nth-of-type(3) > div > div > button:nth-of-type(2) {
+        background-image: linear-gradient(
+          to right top,
+          #d16ba5,
+          #c777b9,
+          #ba83ca,
+          #aa8fd8,
+          #9a9ae1,
+          #8aa7ec,
+          #79b3f4,
+          #69bff8,
+          #53cffe,
+          #41dfff,
+          #46eefa,
+          #5ffbf1
+        );
+      }
+      main > div:nth-of-type(3) > div > div > button:nth-of-type(3) {
+        background-image: linear-gradient(
+          to right top,
+          #bb6bd1,
+          #c370d3,
+          #cc75d6,
+          #d47ad8,
+          #dc7fdb,
+          #ef7cc6,
+          #fa7db1,
+          #ff839e,
+          #ff9571,
+          #fab749,
+          #c5dc4a,
+          #5ffb87
+        );
+      }
+      main > div:nth-of-type(3) > div > div > button:nth-of-type(4) {
+        background-image: linear-gradient(
+          to right top,
+          #d1856b,
+          #d69462,
+          #d4a65d,
+          #cbb95d,
+          #bbcd67,
+          #96d579,
+          #68db95,
+          #00dfb6,
+          #00d4db,
+          #00c4f9,
+          #00b0ff,
+          #5f96fb
+        );
+      }
+      .category {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+      .category > div {
+        width: 150px;
+
+        justify-content: center;
+        text-align: center;
+        padding: 20px 0px;
+        background-color: #051937;
+        margin: 0 10px;
+        border-radius: 10px;
+      }
+      .category > div > * {
+        display: block;
+        margin: 10px auto;
+      }
+      .done {
+        text-decoration: line-through;
+      }
+      .delete {
+        display: none !important;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <main>
+      <h1>tasks list</h1>
+      <div>
+        <input type="text" placeholder="add tasks" />
+
+        <button id="addTasks">add tasks</button>
+      </div>
+      <div class="category">
+        <div>
+          <input id="business" type="radio" name="category" />
+          <span>business</span>
+        </div>
+        <div>
+          <input id="personal" type="radio" name="category" />
+          <span>personal</span>
+        </div>
+      </div>
+      <div id="todos">
+        <h3>tasks</h3>
+        
+      </div>
+    </main>
+    <script>
+      let inputTask = document.querySelector("input");
+      let todos = document.getElementById("todos");
+      let radioBtn = document.querySelectorAll("input[type=radio]");
+      let data = {
+        category: "business",
+      };
+      document
+        .getElementById("addTasks")
+        .addEventListener("click", function () {
+          console.log(data.category);
+          radioBtn.forEach(function (el) {
+            el.addEventListener("click", function (e) {
+              if (e.target.id == "personal") {
+                if (e.target.value === "on") {
+                  data.category = e.target.id;
+                }
+              } else {
+                if (e.target.value == "on") {
+                  data.category = e.target.id;
+                }
+              }
+            });
+          });
+
+          if (inputTask.value == "" || inputTask.value == null) {
+            return;
+          }
+          todos.innerHTML += `
+          <div class="box">
+          <h3>${inputTask.value}</h3>
+          <div class="oprat">
+            <button>${data.category}</button>
+            <button onclick="done(this)">👍</button>
+          
+            <button onclick="deleteTask(this)">delete</button>
+          </div>
+        </div>
+          `;
+          inputTask.value = "";
+        });
+      function done(el) {
+        el.parentElement.previousElementSibling.classList.toggle("done");
+      }
+      function deleteTask(el) {
+        // console.log(el.parentElement.parentElement)
+        el.parentElement.parentElement.classList.add("delete");
+      }
+    </script>
+  </body>
+</html>
